@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+body {
+background-color: indigo;  
+width: 50%; 
+margin: auto;
+}
+
+label {
+display: inline-block; 
+width: 20em; 
+}
+  
+form {
+background-color: rgba(255, 255, 255, 0.5); 
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea, select {
+background-color: rgba(255, 255, 255, 0.5); 
+color: black; 
+border: 1px solid rgba(255, 255, 255, 0.5); 
+padding: 8px;
+margin: 5px ;
+border-radius: 5px;
+box-shadow: 10px rgba(255, 255, 255, 0.75); 
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+background-color: white; 
+color: black; 
+}
+
+input[type="radio"] {
+margin-right: 5px;
+}
+
+button {
+background-color: navy; 
+color: black;
+padding: 8px 15px;
+border: none;
+border-radius: 5px;
+box-shadow: 4px white; 
+margin: 10px;
+}
+
+</style>
+</head>
+<body>
+<form id="registrationForm">
+<h1>Регистрация постоянного клиента</h1>     
+<div>
+<label>Фамилия:</label>
+<input type="text" id="fam" name="fam">
+</div>
+<div>
+<label>Имя:</label>
+<input type="text" id="im" name="im">
+</div>
+<div>
+<label>Отчество:</label>
+<input type="text" id="otch" name="otch">
+</div>
+<div>
+<label>Ваш возраст:</label>
+<input type="number" id="age" name="age">
+</div>
+<div>
+<label>Пол:</label>
+<input type="radio" id="male" name="sex" value="мужской"> мужской
+<input type="radio" id="female" name="sex" value="женский"> женский
+</div>
+<div>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email">
+</div>
+<div>
+<label for="country">Страна проживания:</label>
+<input type="text" id="country" name="country">
+</div>
+<div>
+<label for="source">Откуда вы узнали о нас?</label>
+<select id="source" name="source">
+<option value="друзья">Друзья</option>
+<option value="реклама">Реклама</option>
+<option value="интернет">Интернет</option>
+</select>
+</div>
+<div>
+<label for="faculty">Факультет:</label>
+<select id="faculty" name="faculty">
+<option value="факультет_1">Факультет  ФИТ</option>
+<option value="факультет_2">Факультет ХТиТ</option>
+<option value="факультет_3">Факультет ЛХФ</option>
+<option value="факультет_3">Факультет ЛИД</option>
+</select>
+</div>
+<div>
+<label for="group">Группа:</label>
+<select id="group" name="group">
+<option value="группа_1">Группа 1</option>
+<option value="группа_2">Группа 2</option>
+<option value="группа_2">Группа 3</option>
+<option value="группа_2">Группа 4</option>
+<option value="группа_2">Группа 5</option>
+<option value="группа_2">Группа 6</option>
+<option value="группа_2">Группа 7</option>
+<option value="группа_2">Группа 8</option>
+<option value="группа_2">Группа 9</option>
+<option value="группа_2">Группа 10</option>
+</select>
+</div>
+<div>
+<label for="course">Курс:</label>
+<select id="course" name="course">
+<option value="курс_1">Курс 1</option>
+<option value="курс_2">Курс 2</option>
+<option value="курс_3">Курс 3</option>
+<option value="курс_3">Курс 4</option>
+</select>
+</div>
+<div>
+<button type="submit">Регистрация</button>
+</div>
+<div>
+<button type="reset">Отмена</button>
+</div>
+</form>
+<footer id="output">
+<script>
+const form = document.getElementById("registrationForm");
+
+form.addEventListener("submit", (event) => { 
+  event.preventDefault(); 
+
+  const formData = new FormData(form);
+  const formObject = {};
+  formData.forEach((value, key) => (formObject[key] = value));
+
+  output.innerHTML = "";
+  
+  for (const key in formObject) {
+    output.innerHTML += `${key}: ${formObject[key]}<br>`;
+  }
+
+});
+</script></footer>
+</body>
+</html>

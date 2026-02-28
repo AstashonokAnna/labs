@@ -1,0 +1,32 @@
+<?xml  version="1.0"  encoding="UTF-8"?> 
+<?xml-stylesheet type="text/xsl" href="products.xsl"?>
+<catalog>
+    <products>
+        <prod>
+            <title>
+                <brand>Apple</brand>    
+                <model>Iphone 14 Pro </model>
+            </title>
+            <articul>6584376</articul>
+            <price>5000BYN</price>
+            <desc>Процессор: Apple A16 Bionic; Оперативная память: 6 Гб; Встроенная память: 128, 256, 512 Гб или 1 Тб</desc>
+        </prod>  
+        <prod>
+                <brand>Huawei</brand>
+                <model>nova Y61 EVE-LX9N</model>
+            </title>
+            <articul>1278566</articul>
+            <price>400BYN</price>
+            <desc> Экран:  6.52 " 720x1600 пикселей, IPS , 60 Гц; Процессор:  HiSilicon Kirin 710A , 8 ядр., 2 ГГц; Память:  ОЗУ 4 ГБ , 128 ГБ</desc>
+        </prod>
+        <prod>
+            <title>
+                <brand>Samsung </brand>
+                <model>Galaxy S21 FE</model>
+            </title>
+            <articul>7657582</articul>
+            <price>2500BYN</price>
+            <desc>Экран6.4" (2340×1080) Dynamic AMOLED 2X 120 Гц; Фото3 камеры, основная 12 МП; Аккумулятор4500 мА·ч</desc>
+        </prod>
+    </products>
+</catalog>

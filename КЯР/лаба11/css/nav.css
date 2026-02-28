@@ -1,0 +1,59 @@
+.a_2:hover {
+    color: rgb(200, 200, 200);
+  }
+  
+  .a_4:hover {
+    color: rgb(200, 200, 200);
+  }
+  
+  nav {
+    display: flex;
+    gap: 10px;
+    border: 2px solid whitesmoke;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    align-content: space-between;
+    background-image: url(../img/back.png);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    flex-grow: 1;
+    height: 10vh;
+    width: 97vw;
+  }
+  nav img {
+    height: 100%;
+    margin-left: 50px;
+    margin-right: 40vw;
+  }
+  nav ul {
+    display: flex;
+    gap: 10px;
+    border: 2px solid whitesmoke;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 0;
+    flex-grow: 0;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    list-style-type: none;
+    border: 0;
+  }
+  nav ul li {
+    display: inline-block;
+    width: 20%;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  nav ul li a {
+    display: inline-block;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    width: 10vw;
+    height: 5vh;
+    text-decoration: none;
+  }

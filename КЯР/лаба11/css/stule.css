@@ -1,0 +1,269 @@
+body, main .img h2, main .text h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+aside form input[type=button] {
+  margin-bottom: 20px;
+}
+
+.a_1:hover {
+  color: rgb(200, 200, 200);
+}
+
+.a_2:hover {
+  color: rgb(200, 200, 200);
+}
+
+.a_3:hover {
+  color: rgb(200, 200, 200);
+}
+
+.a_4:hover {
+  color: rgb(200, 200, 200);
+}
+
+aside {
+  flex: 1 1 300px;
+  justify-self: flex-end;
+}
+aside form {
+  border: 2px solid whitesmoke;
+  padding-left: 20px;
+}
+aside form p {
+  border: 0;
+}
+aside div[class=grid] {
+  display: grid;
+  grid-template-areas: "x1 x2" "x3 x4";
+  grid-template-columns: 140px, 1fr;
+  grid-template-rows: 1fr, 1fr;
+  gap: 5px;
+  background-color: rgb(5, 2, 24);
+  padding: 20px;
+}
+aside div[class=grid] img {
+  width: 50%;
+}
+
+body, main .img h2, main .text h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+aside form input[type=button] {
+  margin-bottom: 20px;
+}
+
+.a_1:hover {
+  color: rgb(200, 200, 200);
+}
+
+.a_2:hover {
+  color: rgb(200, 200, 200);
+}
+
+.a_3:hover {
+  color: rgb(200, 200, 200);
+}
+
+.a_4:hover {
+  color: rgb(200, 200, 200);
+}
+
+footer p {
+  border: 0;
+  padding-left: 20px;
+}
+
+body, main .img h2, main .text h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+aside form input[type=button] {
+  margin-bottom: 20px;
+}
+
+.a_1:hover {
+  color: rgb(200, 200, 200);
+}
+
+.a_2:hover {
+  color: rgb(200, 200, 200);
+}
+
+.a_3:hover {
+  color: rgb(200, 200, 200);
+}
+
+.a_4:hover {
+  color: rgb(200, 200, 200);
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+  border: 2px solid whitesmoke;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  align-content: space-between;
+  background-image: url(../img/back.png);
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  flex-grow: 1;
+  height: 10vh;
+  width: 97vw;
+}
+nav img {
+  height: 100%;
+  margin-left: 50px;
+  margin-right: 40vw;
+}
+nav ul {
+  display: flex;
+  gap: 10px;
+  border: 2px solid whitesmoke;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  align-content: space-between;
+  padding: 0;
+  flex-grow: 0;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  list-style-type: none;
+  border: 0;
+}
+nav ul li {
+  display: inline-block;
+  width: 20%;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+nav ul li a {
+  display: inline-block;
+  border: 2px solid whitesmoke;
+  color: whitesmoke;
+  width: 10vw;
+  height: 5vh;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: rgb(200, 200, 200);
+}
+
+body, main .img h2, main .text h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+aside form input[type=button] {
+  margin-bottom: 20px;
+}
+
+.a_1:hover {
+  color: rgb(200, 200, 200);
+}
+
+.a_2:hover {
+  color: rgb(200, 200, 200);
+}
+
+.a_3:hover {
+  color: rgb(200, 200, 200);
+}
+
+.a_4:hover {
+  color: rgb(200, 200, 200);
+}
+
+main {
+  flex: 2 1 500px;
+}
+main .text {
+  display: flex;
+  gap: 10px;
+  border: 2px solid whitesmoke;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: stretch;
+  flex: 1 1 100%;
+  justify-content: space-evenly;
+}
+main .text h2 {
+  width: 100%;
+  font-size: 100%;
+}
+main .text p {
+  min-height: 170px;
+  font-size: 85%;
+  text-align: center;
+  border: 4px solid whitesmoke;
+  color: whitesmoke;
+  padding-top: 20px;
+}
+main .img {
+  display: flex;
+  gap: 10px;
+  border: 2px solid whitesmoke;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  align-content: space-between;
+  align-items: stretch;
+  align-content: flex-start;
+  justify-content: space-evenly;
+}
+main .img h2 {
+  height: auto;
+  width: 100%;
+}
+main .img div {
+  margin-top: 15px;
+  position: relative;
+  width: 15vw;
+  white-space: nowrap;
+}
+main .img div img {
+  display: inline-block;
+  width: 100%;
+}
+
+body, main .text h2, main .img h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+aside form input[type=button] {
+  margin-bottom: 20px;
+}
+
+.a_1:hover {
+  color: rgb(200, 200, 200);
+}
+
+.a_2:hover {
+  color: rgb(200, 200, 200);
+}
+
+.a_3:hover {
+  color: rgb(200, 200, 200);
+}
+
+.a_4:hover {
+  color: rgb(200, 200, 200);
+}
+
+body {
+  color: whitesmoke;
+  background-color: rgb(26, 26, 26);
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  border: 2px solid whitesmoke;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  align-content: space-between;
+}

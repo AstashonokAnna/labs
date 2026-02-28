@@ -1,0 +1,12 @@
+@import "aside";
+@import "footer";
+@import "nav";
+@import "section";
+@import "peremennie";
+@import "mixins_and_function";
+body {
+    color: whitesmoke; 
+    @extend %font; 
+    background-color: $black;
+}
+.container {@include flex;}

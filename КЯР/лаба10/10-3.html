@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+.grid { 
+display: grid; 
+width: 80%;
+grid-template-columns: 1fr 1fr 1fr;         
+grid-template-rows: 40px 40px 40px;         
+grid-gap: 5px; 
+justify-self: center;
+text-align: center;
+margin-bottom: 30px;
+}
+
+.div1 { 
+background: rgb(93, 211, 226); 
+grid-row-start: 1;         
+grid-row-end: 2;         
+grid-column-start: 1; 
+grid-column-end: 4; 
+writing-mode: horizontal-tb;
+}     
+        
+.div2 { 
+background: rgb(246, 168, 246); 
+}
+
+.gallery-container {
+display: grid;
+grid-template-columns: repeat(4, 1fr); 
+gap: 10px;
+margin-top: 20px; 
+padding: 10%; 
+}
+
+.gallery-item img {
+width: 100%; 
+height: auto; 
+}
+
+figcaption {
+text-align: center;
+margin-top: 5px; 
+}
+
+.img-text {
+color: black; 
+}
+
+@media (max-width:1280px) {
+.img-text {
+     color: green;
+            }
+}  
+        
+@media(max-width:1000px) {
+.img-text {
+     color: blue;
+            }
+}
+
+@media(max-width:600px) {
+.img-text {
+     color: red;
+            }
+}
+
+</style>
+</head>
+<body>
+<div class="grid"> 
+<div class="div1">Заголовок</div>
+<div class="div2">Ячейка 2</div> 
+<div class="div2">Ячейка 3</div> 
+<div class="div2">Ячейка 4</div> 
+</div> 
+<section class="gallery">
+<div class="gallery-container">
+<figure class="gallery-item">
+<img src="c:\Users\user\Pictures\Saved Pictures\2.jpg" alt="Image 1">
+<figcaption class="img-text">Image 1</figcaption>
+</figure>
+<figure class="gallery-item">
+<img src="c:\Users\user\Pictures\Saved Pictures\3.jpg" alt="Image 2">
+<figcaption class="img-text">Image 2</figcaption>
+</figure>
+<figure class="gallery-item">
+<img src="c:\Users\user\Pictures\Saved Pictures\4.jpg" alt="Image 3">
+<figcaption class="img-text">Image 3</figcaption>
+</figure>
+<figure class="gallery-item">
+<img src="c:\Users\user\Pictures\Saved Pictures\5.jpg" alt="Image 4">
+<figcaption class="img-text">Image 4</figcaption>
+</figure>
+<figure class="gallery-item">
+<img src="c:\Users\user\Pictures\Saved Pictures\32.jpg" alt="Image 5">
+<figcaption class="img-text">Image 5</figcaption>
+</figure>
+<figure class="gallery-item">
+<img src="c:\Users\user\Pictures\Saved Pictures\33.jpg" alt="Image 6">
+<figcaption class="img-text">Image 6</figcaption>
+</figure>
+<figure class="gallery-item">
+<img src="c:\Users\user\Pictures\Saved Pictures\34.jpg" alt="Image 7">
+<figcaption class="img-text">Image 7</figcaption>
+</figure>
+<figure class="gallery-item">
+<img src="c:\Users\user\Pictures\Saved Pictures\35.jpg" alt="Image 8">
+<figcaption class="img-text">Image 8</figcaption>
+</figure>
+</div>
+</section>
+</body>
+</html>

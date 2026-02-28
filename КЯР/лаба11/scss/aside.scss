@@ -1,0 +1,23 @@
+@import "mixins_and_function";
+@import "peremennie";
+aside {
+    flex: 1 1 30%;
+    justify-self: flex-end;
+    form {
+        @include form;
+        p {
+            border: 0;
+        }
+        input[type=button] {
+            @extend %mar;
+        }
+    }
+    div[class=grid] {
+        @include grid;
+        background-color: $darkb;
+        padding: 20px;
+        img {
+            width: 100%;
+        }
+    }
+}

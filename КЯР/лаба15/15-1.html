@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #f0f0f0;
+}
+
+.gallery {
+margin-top: 100px;
+display: flex;
+gap: 20px;
+}
+
+.photo {
+position: relative;
+width: 300px;
+height: 350px;
+transition: border 0.3s;
+}
+
+.photo img {
+width: 100%;
+height: 100%;
+}
+
+.desc {
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(255, 255, 255, 0.8);
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 0;
+transition: opacity 0.3s;
+}
+
+.photo:hover .desc{
+opacity: 1;
+}
+
+</style>
+</head>
+<body>
+<div class="gallery">
+<div class="photo" id="photo1">
+<img src="c:\Users\user\Pictures\Saved Pictures\32.jpg" alt="Porsche">
+<div class="desc">Porsche — это немецкий производитель автомобилей, основанный Фердинандом Порше в 1931 году.<br>Компания известна своими спортивными автомобилями класса «люкс», а также внедорожниками.<br>Одной из самых известных моделей Porsche является 911, которая стала символом марки и получила признание за свои динамические характеристики и уникальный дизайн.</div>
+</div>
+<div class="photo" id="photo2">
+<img src="c:\Users\user\Pictures\Saved Pictures\33.jpg" alt="Porsche">
+</div>
+<div class="photo" id="photo3">
+<img src="c:\Users\user\Pictures\Saved Pictures\34.jpg" id="img3" alt="Porsche">
+</div>
+</div>
+<script>
+document.getElementById('photo2').addEventListener('click', function() {
+this.style.border = '10px solid red';
+});
+
+const img3 = document.getElementById('img3');
+const originalSrc = '34.jpg'; 
+const hoverSrc = '35.jpg';
+img3.addEventListener('mouseover', function() {
+img3.src = hoverSrc;
+});
+
+img3.addEventListener('mouseout', function() {
+img3.src = originalSrc;
+});
+</script>
+</body>
+</html>

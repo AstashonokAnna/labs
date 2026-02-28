@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="attestation.xsl"?>
+<Attestation>
+    <Student id="1">
+        <Name>Мария</Name>
+        <Grade>9</Grade>
+        <Grade1>5</Grade1>
+    </Student>
+    <Student id="2">
+        <Name>Анна</Name>
+        <Grade>8</Grade>
+        <Grade1>10</Grade1>
+    </Student>
+    <Student id="3">
+        <Name>Алексей </Name>
+        <Grade>4</Grade>
+        <Grade1>9</Grade1>
+    </Student>
+</Attestation>

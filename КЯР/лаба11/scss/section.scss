@@ -1,0 +1,44 @@
+@import "mixins_and_function";
+@import "peremennie";
+main{
+    flex: 2 1 65%;
+    .text{
+        @include flex;
+        align-items: stretch;
+        flex: 1 1 100%;
+        justify-content: space-evenly;
+        h2{
+            @extend %font;
+            width: 100%;
+            font-size: textsize();
+        }
+        p{
+            width: 15vw ;
+            font-size: textsize()-15%;
+            text-align: center;
+            border: 2px solid whitesmoke;
+            color: whitesmoke;
+            padding-top: 20px;
+        }
+    }
+    .img{
+        @include flex;
+        align-items: stretch;
+        align-content: flex-start;
+        justify-content: space-evenly;
+        h2{
+            height: auto;
+            width: 100%;
+            @extend %font;
+        }
+        div{
+            margin-top: 15px;
+            position: relative;
+            width: 15vw;         
+            img{
+                display: inline-block;
+                width: 100%;
+            }
+        }
+    }
+}

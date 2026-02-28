@@ -1,0 +1,30 @@
+main {
+padding: 20px;
+}
+
+.container {
+display: flex;
+width: 100%;
+gap: 20px;
+flex-wrap: wrap; 
+}
+
+.cell {
+border: 1px solid #ccc;
+padding: 10px;
+border-radius: 5px;
+background: #fff;
+flex-basis: calc(33.33% - 20px);
+box-sizing: border-box; 
+margin-bottom: 20px;
+}
+
+.cell video, .cell audio {
+margin: 10px auto;
+display: block; 
+}
+
+.cell-2 {
+text-align: justify;
+}
+
