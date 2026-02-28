@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.grid2 { 
+display:grid;
+grid-template-columns: 15px 3fr 3fr 3fr 3fr 15px;         
+grid-gap: 5px; 
+text-align:center;
+} 
+
+.div3{ 
+background: rgb(93, 211, 226); 
+grid-row-start: 1;        
+grid-row-end: 15;         
+writing-mode: horizontal-tb;
+}
+
+.div4 { 
+background:rgb(246, 168, 246); 
+} 
+
+.div5 {  
+display: grid;
+gap: 5px;
+grid-row-start: 1;         
+grid-row-end: 15;
+} 
+
+.div6{ 
+background: rgb(93, 211, 226); 
+grid-row-start: 1;         
+grid-row-end: 15;         
+writing-mode:vertical-rl;
+text-orientation: upright;
+}
+
+.div7{ 
+background: rgb(93, 211, 226); 
+grid-row-start: 1;         
+grid-row-end: 15;         
+writing-mode: horizontal-tb;
+margin-left: 10px;
+}
+
+.div4 { 
+background:rgb(246, 168, 246); 
+}
+
+</style> 
+</head>
+<body>
+<div class="grid2">
+<div class="div6">Заголовок</div>
+<div class="div3">Ячейка 1</div>
+<div class="div3">Ячейка 2</div>
+<div class="div7">Ячейка 1</div>
+<div class="div5">
+<div class="div4">Ячейка 2</div>
+<div class="div4">Ячейка 3</div>
+</div>
+<div class="div6">Заголовок</div>
+</div>
+</body>
+</html>

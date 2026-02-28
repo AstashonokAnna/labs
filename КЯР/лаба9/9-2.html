@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+display: grid;
+width: 100%;
+grid-template-columns: repeat(5, 1fr); 
+grid-auto-rows: minmax(100px, auto);
+grid-gap: 5px;
+justify-items: center; 
+}
+
+.grid-container img {
+max-width: 100%;
+height: auto; 
+display: block; 
+}
+
+.grid-item-9 {
+grid-column: 4 / span 2; 
+grid-row: 2 / span 2; 
+}
+
+.grid-item-10 {
+grid-column: 1 / span 2; 
+grid-row: 3 / span 2;
+}
+
+.grid-item-11 {
+grid-column: 3;
+grid-row: 3;
+}
+
+.grid-item-12 {
+grid-column: 3;
+grid-row: 4;
+}
+
+.grid-item-13 {
+grid-column: 4;
+grid-row: 4;
+}
+
+.grid-item-14 {
+grid-column: 5;
+grid-row: 4;
+}
+
+</style>
+</head>
+<body>
+<div class="grid-container">
+<img src="c:\Users\user\Pictures\Снимок экрана_22-12-2024_21056_tenor.com.jpeg" alt="1">
+<img src="c:\Users\user\Pictures\Снимок экрана_22-12-2024_21056_tenor.com.jpeg" alt="2">
+<img src="c:\Users\user\Pictures\Снимок экрана_22-12-2024_21056_tenor.com.jpeg" alt="3">
+<img src="c:\Users\user\Pictures\Снимок экрана_22-12-2024_21056_tenor.com.jpeg" alt="4">
+<img src="c:\Users\user\Pictures\Снимок экрана_22-12-2024_21056_tenor.com.jpeg" alt="5">
+<img src="c:\Users\user\Pictures\Снимок экрана_22-12-2024_21056_tenor.com.jpeg" alt="6">
+<img src="c:\Users\user\Pictures\Снимок экрана_22-12-2024_21056_tenor.com.jpeg" alt="7">
+<img src="c:\Users\user\Pictures\Снимок экрана_22-12-2024_21056_tenor.com.jpeg" alt="8">
+<img src="c:\Users\user\Pictures\mclaren-artura-supercar.gif" alt="9" class="grid-item-9">
+<img src="c:\Users\user\Pictures\mclaren-artura-supercar.gif" alt="10" class="grid-item-10">
+<img src="c:\Users\user\Pictures\Снимок экрана_22-12-2024_21056_tenor.com.jpeg" alt="11" class="grid-item-11">
+<img src="c:\Users\user\Pictures\Снимок экрана_22-12-2024_21056_tenor.com.jpeg" alt="12" class="grid-item-12">
+<img src="c:\Users\user\Pictures\Снимок экрана_22-12-2024_21056_tenor.com.jpeg" alt="13" class="grid-item-13">
+<img src="c:\Users\user\Pictures\Снимок экрана_22-12-2024_21056_tenor.com.jpeg" alt="14" class="grid-item-14">
+</div>
+</body>
+</html>

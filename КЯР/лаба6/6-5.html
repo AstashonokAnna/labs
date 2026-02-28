@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  display: block;
+  height: 100px; 
+}
+.center {display: flex; justify-content: space-evenly;}
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.box1 {
+  background-image: linear-gradient(to bottom, rgb(238, 84, 202), rgb(70, 119, 242)); 
+}
+
+.box2 {
+  background-image: repeating-linear-gradient(45deg, rgb(238, 84, 202) 25px,  rgb(70, 119, 242) 50px); 
+}
+
+.box3 {
+  background-image: radial-gradient(circle,rgb(238, 84, 202), rgb(70, 119, 242)); 
+}
+
+.box4 {
+  background-image:  repeating-radial-gradient(rgb(238, 84, 202) 7px,  rgb(70, 119, 242)15px);
+}
+
+.box5 {
+  background-image: radial-gradient(circle, rgb(238, 84, 202 ), rgb(70, 119, 242), rgb(158, 65, 239), transparent), linear-gradient( rgb(117, 1, 1), rgb(189, 9, 93)); 
+}
+
+#map-image {
+  display: flex;
+  width:400px;
+  height: 500px; 
+  border: 1px solid black;
+}
+
+#map-image img {
+  display: flex;
+  width: 200px;
+  height: 250px;
+}
+
+</style>
+<body>
+<div class="center">
+<div class="box box1"></div>
+<div class="box box2"></div>
+<div class="box box3"></div>
+<div class="box box4"></div>
+<div class="box box5"></div>
+</div>
+
+<div class="center">
+ <div>
+<img id="map-image" src="c:\Users\user\Pictures\Saved Pictures\5a.jpg" alt="щеночки" usemap="#puppies" width=500px height=550px >
+</div>
+<map name="puppies">
+  <area shape="rect" coords="0,0,210,300" href="c:\Users\user\Pictures\Saved Pictures\1a.jpg" >
+  <area shape="rect" coords="210,0,500,300" href="c:\Users\user\Pictures\Saved Pictures\1b.jpg" >
+  <area shape="rect" coords="0,300,210,600" href="c:\Users\user\Pictures\Saved Pictures\1c.jpg" >
+  <area shape="rect" coords="210,300,500,600" href="c:\Users\user\Pictures\Saved Pictures\1d.jpg" >
+</map>
+</div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<style>
+    
+body {
+display: inline-block;
+background-color: #f0f0f0;
+margin: 0;
+padding: 20px;
+}
+
+.div2:hover {
+background: url('facultet.png') no-repeat 0 -30px;
+background-color: rgb(67, 92, 231);
+}
+
+.div3:hover {
+background: url('facultet.png') no-repeat 0 -90px;
+background-color: rgb(67, 92, 231);
+}
+
+.div4:hover {
+background: url('facultet.png') no-repeat 0 -60px;
+background-color: rgb(67, 92, 231);
+}
+
+.g {
+list-style-type: none;
+padding: 0;
+margin: 0 0 20px;
+}
+
+.g li {
+display: inline-block;
+}
+
+.g a {
+background: url('facultet.png') no-repeat 0 0;
+display: inline-block;
+height: 20px;
+width: 150px;
+border: 1px solid rgb(6, 33, 87);
+padding: 5px 15px;
+background-color: rgb(67, 92, 231);
+color: rgb(46, 12, 86);
+text-align: center;
+text-decoration: none;
+}
+
+.nav {
+margin: 0;
+padding: 0;
+}
+
+.nav>ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+.nav {
+position: relative;
+display: inline-block;
+}
+
+.s {
+display: none;
+position: absolute;
+border: 3px rgb(67, 92, 231) dashed;
+background-color: rgb(170, 193, 247);
+text-align: center;
+z-index: 1000;
+}
+
+.nav:hover .s {
+display: block
+}
+
+.s a {
+display: inline-block;
+padding: 5px;
+text-decoration: none;
+color: black;
+}
+
+.s a:hover {
+background-color: rgb(248, 115, 190);
+}
+
+.main {
+display: flex;
+}
+
+</style>
+</head>
+<body>
+<div class="main">
+<ul class="g">
+<li><a  href="https://belstu.by/fakultety/fit/pi/?ysclid=m4kfltq3gt283465885">БГТУ</a></li>
+<li class="nav">
+<a href="#" class="div2">ИТ</a>
+<ul class="s">
+<li><a href="https://it.belstu.by/abiturientu/informacionnye-sistemy-i-tehnologii/">Кафедра  ИСиТ</a></li>
+<li><a href="https://it.belstu.by/abiturientu/dizajn-jelektronnyh-i-veb-izdanij/">Кафедра ИиВД</a></li>
+<li><a href="https://it.belstu.by/abiturientu/programmnoe-obespechenie-informacionnyh-tehnologij/">Кафедра ПИ</a></li>
+</ul>
+</li>
+<li><a class="div3" href="https://pim.belstu.by/">ПиМ</a></li>
+<li> <a class="div4" href="https://htit.belstu.by/">ХТиТ</a></li>
+</ul>
+</div>
+</body>
+</html>

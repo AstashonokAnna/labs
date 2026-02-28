@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+
+@keyframes b1{
+    0% {
+    transform: rotateY(0deg);
+    margin-right: 10px;
+    }
+
+    50% {
+    transform: rotateY(0deg);
+
+    }
+
+    100% {
+    margin-right: 10px;
+
+    }
+}
+
+@keyframes b2 {
+    0% {
+    transform: rotateY(0deg);
+    margin-right: 10px;
+    filter: blur(10px)
+    }
+
+    50% {
+    transform: rotateY(0deg);
+
+    }
+
+    100% {
+    margin-right: 10px;
+    }
+}
+
+@keyframes b3 {
+    0% {
+    transform: rotateY(0deg);
+    margin-right: 10px;
+    filter: grayscale(1);
+    }
+
+    50% {
+    transform: rotateY(0deg);
+
+    }
+
+    100% {
+    margin-right: 10px;
+
+    }
+}
+
+@keyframes b4 {
+    0% {
+    transform: rotateY(0deg);
+    margin-right: 10px;
+    filter: invert(1);
+    }
+
+    50% {
+    transform: rotateY(0deg);
+    }
+
+    100% {
+    margin-right: 10px;
+
+    }
+}
+
+.task4 {
+display: flex;
+perspective: 500px;
+min-height: 300px;
+}
+
+
+.task4 div {
+display: flex;
+width: 200px;
+height: 200px;
+background: #fff;
+}
+
+.b1 {
+transform: translateX(100%) rotateY(20deg);
+animation: b1 3s linear infinite alternate-reverse;
+
+}
+
+.b2 {
+transform: translateX(15%) rotateY(20deg);
+animation: b2 3s linear infinite alternate-reverse;
+
+}
+
+.b3 {
+transform: translateX(-75%) rotateY(20deg);
+animation: b3 3s linear infinite alternate-reverse;
+
+}
+
+.b4 {
+transform: translateX(-150%) rotateY(20deg);
+animation: b4 3s linear infinite alternate-reverse;
+
+}
+
+.imganim {
+width: 200px;
+height: 200px;
+}
+
+</style>
+
+<body>
+<div class="task4">
+<div class="b1"><img src="c:\Users\user\Pictures\Saved Pictures\2.jpg" alt="" class="imganim"></div>
+<div class="b2"><img src="c:\Users\user\Pictures\Saved Pictures\3.jpg" alt="" class="imganim"></div>
+<div class="b3"><img src="c:\Users\user\Pictures\Saved Pictures\4.jpg" alt="" class="imganim"></div>
+<div class="b4"><img src="c:\Users\user\Pictures\Saved Pictures\5.jpg" alt="" class="imganim"></div>
+</div>
+</section>
+</head>
+</body>
+</html>

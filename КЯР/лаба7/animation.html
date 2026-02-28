@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /*задание1*/
+img{
+width: 150px;
+margin: 70px;
+height: auto;
+}
+.a:hover{
+transform:scale(0.5);
+transition: 1s;
+}
+.q:hover{
+transform: rotate(45deg);
+transition: 1s;
+}
+.w:hover{
+transform: translate(50px);
+transition: 1s;
+}
+.s:hover{
+transform: skew(-20deg);
+transition: 1s;
+}
+
+
+/*задание2*/
+.f {
+width:100px;
+height: 30px; 
+margin: 70px;
+background-color:rgb(248, 7, 156);
+color:white;
+transition: background-color 0.3s, color 0.3s;
+}
+.f:hover {
+background-color: black;
+color: white;
+}
+
+.v {
+width:100px;
+height: 30px; 
+margin: 70px;
+background-color: rgb(119, 0, 255);
+border: 3px solid rgb(187, 0, 255);
+color: rgb(1, 4, 30);
+transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+.v:hover {
+background-color: white;
+border-color: red;
+color: black;
+}
+
+.h {
+width:100px;
+height: 30px; 
+margin: 70px;
+background-color: rgb(138, 225, 132);
+border-top: 3px solid darkgreen;
+border-bottom: 3px solid darkgreen;
+color: darkgreen;
+transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+.h:hover {
+background-color: white;
+border-top: 3px solid green;
+border-bottom: 3px solid green;
+border-left:3px solid white;
+border-right:3px solid white;
+color: black;
+}
+
+.r {
+width:100px;
+height: 30px; 
+margin: 70px;
+background-color: blue;
+transition: background-color 0.3s, width 0.3s;
+}
+.r:hover {
+background-color: white;
+color:black;
+border-left:3px solid blue;
+border-right:3px solid blue;
+border-top:3px solid white;
+border-bottom:3px solid white;
+}
+
+.g {
+width:100px;
+height: 30px; 
+margin: 70px;
+background: radial-gradient( rgb(0, 119, 255), rgb(0, 195, 255), rgb(234, 0, 255) );
+color: black;
+transition: background-image 0.3s;
+}
+.g:hover {
+background: radial-gradient(rgb(255, 247, 0), rgb(255, 0, 195),  rgb(0, 106, 255),  rgb(0, 221, 255));
+}
+
+
+/*задание3*/
+.inline-images img{
+display: inline-block;
+width:150px;
+height: 250px;
+margin: 70px;
+}
+.m{
+transform: perspective(500px) rotateX(45deg);
+margin-left: 15px;
+}
+.x{
+transform: perspective(400px) rotateY(50deg);
+margin-left: 15px;
+}
+.i{
+transform: perspective(300px) rotateX(45deg);
+}
+.z{
+transform: perspective(400px) rotateY(135deg);
+margin-left: 15px;
+}
+
+
+/*задание5*/
+.container.blocks {
+position: relative;
+width: 1000px; 
+height: 600px; 
+display: flex;
+flex-wrap: wrap;
+}
+  
+.container.blocks div, .container.blocks img {
+padding: 0;
+margin: 0;
+}
+
+.image {
+position: absolute;
+width: 300px; 
+height: auto;
+}
+  
+.f1 {
+animation: moveHorizontal 2s linear infinite;
+top: 100px;
+left: 20px ;
+}
+  
+
+.f2{
+animation:moveDirect 2s linear infinite;
+border-radius: 120px;
+top: 100px;
+left: 20px ;
+}  
+
+.f3 {
+animation: moveCurve 4s ease-in-out infinite;
+top:100px;
+left:20px ;
+}
+
+.f4 {
+animation: moveVertical 2s linear infinite;
+top:100px;
+left:20px ;
+}
+
+.f5 {
+animation: moveSquare 4s linear infinite;
+position: relative; 
+top:100px;
+left:20px ;
+}
+
+  
+@keyframes moveHorizontal {
+0% { transform: translateX(0); }
+50% { transform: translateX(200px); }
+100% { transform: translateX(0); }
+}
+
+@keyframes moveDirect{
+0% { transform: translateX(0); }
+50% { transform: translateX(200px); }
+100% { transform: translateX(0); }
+}
+  
+@keyframes moveCurve {
+0% { transform: translate(0, 0); }
+25% { transform: translate(200px, 100px); }
+50% { transform: translate(100px, 200px); }
+75% { transform: translate(0, 100px); }
+100% { transform: translate(0, 0); }
+}
+
+@keyframes moveVertical {
+0% { transform: translateY(0); }
+50% { transform: translateY(200px); }
+100% { transform: translateY(0); }
+}     
+
+@keyframes moveSquare {
+0% { left: 0; top: 0; }
+25% { left: 200px; top: 0; }
+50% { left: 200px;  top: 200px; }
+75% { left: 0; top: 200px; }
+100% { left: 0; top: 0; }
+}
+
+
+/*задание6*/
+b {
+    width: 250px; 
+    height: 300px;
+    position: absolute; 
+    border: 5px solid;
+    overflow: hidden; 
+  }
+  
+  .j {
+    margin-top: 1200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; 
+    animation: imageAnimation 5s linear infinite; 
+  }
+  
+  .n {
+    margin-top: 1200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; 
+    animation: imageAnimation 5s linear infinite; 
+  }
+  
+  .u {
+    margin-top: 1200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; 
+    animation: imageAnimation 5s linear infinite; 
+  }
+  
+  .y {
+    margin-top: 1200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; 
+    animation: imageAnimation 5s linear infinite; 
+  }
+  
+  .e {
+    margin-top: 1200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; 
+    animation: imageAnimation 5s linear infinite; 
+  }
+  
+  .j:nth-child(1) {
+      animation-delay: 1s;
+  }
+  
+  .n:nth-child(2) {
+      animation-delay: 2s;
+  }
+  
+  .u:nth-child(3) {
+      animation-delay: 3s;
+  }
+  
+.y:nth-child(4) {
+animation-delay: 4s;
+}
+  
+.e:nth-child(5) {
+animation-delay: 5s;
+}
+  
+@keyframes imageAnimation {
+0% { opacity: 0; }
+20% { opacity: 1; }
+80% { opacity: 1; }
+100% { opacity: 0; }
+}
+
+
+/*задание7*/
+.fl {
+width: 300px;
+height: 300px;
+background-color: #f12db0; 
+border: 1px solid #ccc;
+padding: 10px;
+overflow: auto; 
+transition: color 5s linear; 
+}
+
+.fl :hover {
+transition: 0.3s;
+color: rgb(0, 64, 255); 
+}
+.fl p {
+margin: 0; 
+}
+
+
+/*задание8*/
+h4{
+text-align: center;
+animation: anim1 2s linear infinite;
+}
+@keyframes anim1 {
+0% {opacity: 0%;}
+50% {opacity: 80%;}
+100% {opacity: 0%;}
+}
+
+</style>
+<body>
+<h4>Flowers</h4>
+<div >
+<img class="a" src="c:\Users\user\Pictures\Saved Pictures\2.jpg" >
+<img class="q" src="c:\Users\user\Pictures\Saved Pictures\3.jpg">
+<img class="w" src="c:\Users\user\Pictures\Saved Pictures\4.jpg">
+<img class="s" src="c:\Users\user\Pictures\Saved Pictures\5.jpg">                
+</div>
+
+
+<button class="f">Кнопка 1</button>
+<button class="v">Кнопка 2</button>
+<button class="h">Кнопка 3</button>
+<button class="r">Кнопка 4</button>
+<button class="g">Кнопка 5</button>
+
+
+<div>
+<img class="m" src="c:\Users\user\Pictures\Saved Pictures\2.jpg" >
+<img class="x" src="c:\Users\user\Pictures\Saved Pictures\3.jpg" >
+<img class="i" src="c:\Users\user\Pictures\Saved Pictures\4.jpg" >
+<img class="z" src="c:\Users\user\Pictures\Saved Pictures\5.jpg" >
+</div>
+
+
+<div class="b">
+<div><img class="j" src="c:\Users\user\Pictures\Saved Pictures\2.jpg" ></div>
+<div><img class="n" src="c:\Users\user\Pictures\Saved Pictures\3.jpg"></div>
+<div><img class="u" src="c:\Users\user\Pictures\Saved Pictures\4.jpg" ></div>
+<div><img class="y" src="c:\Users\user\Pictures\Saved Pictures\3.jpg" ></div>
+<div><img class="e" src="c:\Users\user\Pictures\Saved Pictures\5.jpg" ></div>
+</div>
+
+<div class="container blocks">
+<div><img class="f1" src="c:\Users\user\Pictures\Saved Pictures\2.jpg" ></div>
+<div><img class="f2" src="c:\Users\user\Pictures\Saved Pictures\3.jpg" ></div>
+<div><img class="f3" src="c:\Users\user\Pictures\Saved Pictures\4.jpg" ></div>
+<div><img class="f4" src="c:\Users\user\Pictures\Saved Pictures\5.jpg" ></div>
+<div><img class="f5" src="c:\Users\user\Pictures\Saved Pictures\2.jpg" ></div>
+</div>
+
+<div class="fl">
+<p> Цветы – это глаза природы – фиолетовые фиалки, синие колокольчики, голубые незабудки. Они все прекрасны по- своему яркостью цвета, элегантностью бутонов. Цветы, они многогранны и каждый из нас сможет отыскать для себя тот цветок, который ему понравиться - любого размера, вида, цвета. Но в цветке нас привлекает не только их красота, но и необычайный аромат. Запах иногда бывает настолько сильным, что остается в памяти надолго и чтоб вспомнить о цветке, как его запах возникает сам по себе. </p>
+</div>
+</head>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.row > div > p {
+text-align: justify;
+}
+    
+nav ul {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+nav ul li {
+margin-right: 0;
+margin-bottom: 10px;
+}
+
+nav ul li a {
+text-decoration: none;
+color: black;
+padding: 10px 15px;
+display: inline-block;
+}
+         
+nav ul li a:hover {
+background-color: #f0f0f0;
+}
+    
+.headings-row {
+display: flex;
+justify-content: space-around;
+}
+
+h5 {
+text-align: center;
+}
+
+.paragraphs-row {
+display: flex; 
+flex-wrap: wrap; 
+margin:  -10px; 
+}
+    
+.paragraphs-row > div{
+flex: 23%; 
+padding: 10px; 
+}
+    
+</style>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="six columns">
+<img src="c:\Users\user\Pictures\Saved Pictures\12.png" style="width: 200px; height: auto;">
+</div>
+<div class="six columns">
+<nav>
+<ul>
+<li><a href="лаба9/9-1.html">task 1</a></li>
+<li><a href="лаба8/8-4.html">task 2</a></li>
+<li><a href="лаба6/6-4.html">task 3</a></li>
+<li><a href="лаба6/6-1.html">task 4</a></li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="row headings-row">
+<div class="three columns">
+<h5>Заголовок 1</h5>
+</div>
+<div class="three columns">
+<h5>Заголовок 2</h5>
+</div>
+<div class="three columns">
+<h5>Заголовок 3</h5>
+</div>
+<div class="three columns">
+<h5>Заголовок 4</h5>
+</div>
+</div>
+<div class="row paragraphs-row">
+<div class="column">
+<p>Грид-раскладка (CSS Grid Layout) представляет собой двумерную систему сеток в CSS. Гриды подойдут и для верстки основных областей страницы, и небольших элементов пользовательского интерфейса. Эта статья даёт общее представление о грид-раскладке и новой терминологии, которая является частью спецификации CSS Grid Layout Level 1. </p>
+</div>
+<div class="column">
+<p>Грид содержит механизм выравнивания, таким образом мы можем контролировать, как элементы выравниваются после размещения в области сетки и как выравнивается вся сетка.</p>
+</div>
+<div class="column">
+<p>Вы можете создать грид с фиксированными размерами полоc, например используя пиксели. Это установит грид на определенный пиксель, соответствующим желаемому макету. Вы также можете создать грид с гибкими размерами, используя проценты или новую единицу измерения — «fr», разработанную для этой цели.</p>
+</div>
+<div class="column">
+<p>Вы можете определить явную сетку с помощью грид-раскладки. Cпецификация грид-раскладки достаточно гибкая, чтобы добавить при необходимости дополнительные строки и колонки. Также в нее включены такие возможности как, например, добавление «стольких колонок, сколько будет помещено в контейнер».</p>
+</div>
+</div>
+</div>
+</body>
+</html>
